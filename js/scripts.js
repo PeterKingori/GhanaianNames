@@ -41,7 +41,6 @@ function checkValid() {
 //	console.log(dayInt, typeof(dayInt), monthInt, typeof(monthInt), yearInteger, typeof(yearInteger));
 	document.getElementById('form').style.display = 'none';	
 	document.getElementById('result').style.display = 'block';
-
 }
 
 // This function will calculate the day of the week the person was born on
@@ -141,8 +140,7 @@ function calculateDay() {
       akanName = femaleNames[6];
       document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
     }
-  }	
-	
+  }		
 }
 
 
