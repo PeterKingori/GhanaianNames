@@ -38,6 +38,7 @@ function checkValid() {
 		alert('Enter valid values in the form for it to output your results.');
 	}
 //	console.log(dayInt, typeof(dayInt), monthInt, typeof(monthInt), yearInteger, typeof(yearInteger));
+	document.getElementById('form').style.display = 'none';	
 	
 }
 
