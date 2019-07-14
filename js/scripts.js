@@ -5,6 +5,7 @@ function buttonClicked(id) {
 		document.getElementById('noClick').style.display = 'none';
 	} else {
 		document.getElementById('form').style.display = 'none';
+		document.getElementById('result').style.display = 'none';
 		document.getElementById('noClick').style.display = 'block';
 	}
 }
@@ -37,6 +38,7 @@ function checkValid() {
 		alert('Enter valid values in the form for it to output your results.');
 	}
 //	console.log(dayInt, typeof(dayInt), monthInt, typeof(monthInt), yearInteger, typeof(yearInteger));
+	
 }
 
 // This function will calculate the day of the week the person was born on
