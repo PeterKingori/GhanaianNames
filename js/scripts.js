@@ -74,7 +74,58 @@ function calculateDay() {
 	var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 	
 //	console.log(dayOfBirth, gender, userName);
+	
+  if (gender === "male") {
+    if (dayOfBirth === 0) {
+      dayWeek = daysOfWeek[0];
+      akanName = maleNames[0];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+
+    } else if (dayOfBirth === 1) {
+      dayWeek = daysOfWeek[1];
+      akanName = maleNames[1];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+
+    } else if (dayOfBirth === 2) {
+      dayWeek = daysOfWeek[2];
+      akanName = maleNames[2];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+
+    } else if (dayOfBirth === 3) {
+      dayWeek = daysOfWeek[3];
+      akanName = maleNames[3];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+
+    } else if (dayOfBirth === 4) {
+      dayWeek = daysOfWeek[4];
+      akanName = maleNames[4];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+
+    } else if (dayOfBirth === 5) {
+      dayWeek = daysOfWeek[5];
+      akanName = maleNames[5];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+
+    } else if (dayOfBirth === 6) {
+      dayWeek = daysOfWeek[6];
+      akanName = maleNames[6];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+    }
+  }
+	
+	
+	
+	
 }
+
+
+
+
+
+
+
+
+
 
 
 
