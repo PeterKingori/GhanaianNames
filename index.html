@@ -8,6 +8,7 @@
 	<!--	Bootstrap CSS	-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>Ghanaian Naming Culture</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
 
 	<style>
 		#form {
@@ -20,7 +21,7 @@
 </head>
 
 <body>
-	<div class="jumbotron jumbotron-fluid">
+	<div class="jumbotron jumbotron-fluid topHead">
 		<div class="container">
 			<h1 class="display-3">Ghanaian Akan Names</h1>
 			<h3 class="text-center"><small class="text-muted">Learn what your name is in Ghanaian culture according to the day you were born.</small></h3>
@@ -30,6 +31,7 @@
 		<div class="row mb-5">
 			<p>The <span>Akan people</span> of <span>Ghana</span> have a distinct naming system of their children. Newborns are named depending on the day of the week they are born. These names have special meanings as a symbol of their culture, ancestral ties, and even concerning the soul and character of the child. This tradition naming system is also followed in other <span>West African</span> countries with distinct varieties.</p>
 			<p>Most Ghanaians have a name from this system, as well as an English or Christian name. Prominent people named using this system include the former United Nations Secretrary-General, <span>Koffi Atta Annan</span>, who was named for being born on a <span>Friday</span>. Another notable person is <span>Kwame Nkrumah</span>, Ghana's first persident, named for being born on a <span>Saturday</span>.</p>
+			<p>Use our application to find out your Akan name too. Click on the YES button below and a form will appear where you will enter your birth date and gender. Our application will calculate the day of the week you were born on and display your results.</p>
 		</div>
 		<div class="row justify-content-center">
 			<p class="lead col-md-6">Would you like to find out your Akan name?</p>
@@ -67,8 +69,14 @@
 				<input type="button" value="Submit" class="btn btn-primary" onclick="checkValid()">
 			</fieldset>
 		</form>
-		<p class="mt-3" id="reportBack">Your results will display here.</p>
-		<p class="mt-3" id="reportTwo">Your results will display here.</p>
+		<p class="mt-3" id="reportBack">Your results will display here below.</p>
+<!--		<p class="mt-3" id="reportTwo">Your results will display here.</p>-->
+		<div class="card mb-3" style="width: 18rem;">
+			<img class="card-img-bottom" src="images/child1.jpg" alt="Children">
+			<div class="card-body">
+				<p id="reportTwo"></p>
+			</div>
+		</div>
 
 		<h5>You can try again.</h5>
 		<button type="reset" class="btn btn-success"><a href="index.html" class="text-white">Reset form</a></button>		

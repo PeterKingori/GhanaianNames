@@ -33,7 +33,8 @@ function checkValid() {
 	} else if (yearInteger < 1900) {
 		alert('You are not that old!');
 	} else {
-		document.getElementById('reportBack').innerHTML = 'Enter valid values for the day and month of the year.';
+		document.getElementById('reportBack').innerHTML = 'Enter valid values in the form for it to output your results.';
+		alert('Enter valid values in the form for it to output your results.');
 	}
 //	console.log(dayInt, typeof(dayInt), monthInt, typeof(monthInt), yearInteger, typeof(yearInteger));
 }
@@ -80,41 +81,62 @@ function calculateDay() {
       dayWeek = daysOfWeek[0];
       akanName = maleNames[0];
       document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
-
     } else if (dayOfBirth === 1) {
       dayWeek = daysOfWeek[1];
       akanName = maleNames[1];
       document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
-
     } else if (dayOfBirth === 2) {
       dayWeek = daysOfWeek[2];
       akanName = maleNames[2];
       document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
-
     } else if (dayOfBirth === 3) {
       dayWeek = daysOfWeek[3];
       akanName = maleNames[3];
       document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
-
     } else if (dayOfBirth === 4) {
       dayWeek = daysOfWeek[4];
       akanName = maleNames[4];
       document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
-
     } else if (dayOfBirth === 5) {
       dayWeek = daysOfWeek[5];
       akanName = maleNames[5];
       document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
-
     } else if (dayOfBirth === 6) {
       dayWeek = daysOfWeek[6];
       akanName = maleNames[6];
       document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
     }
-  }
-	
-	
-	
+  } else {
+    if (dayOfBirth === 0) {
+      dayWeek = daysOfWeek[0];
+      akanName = femaleNames[0];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+    } else if (dayOfBirth === 1) {
+      dayWeek = daysOfWeek[1];
+      akanName = femaleNames[1];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+    } else if (dayOfBirth === 2) {
+      dayWeek = daysOfWeek[2];
+      akanName = femaleNames[2];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+    } else if (dayOfBirth === 3) {
+      dayWeek = daysOfWeek[3];
+      akanName = femaleNames[3];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+    } else if (dayOfBirth === 4) {
+      dayWeek = daysOfWeek[4];
+      akanName = femaleNames[4];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+    } else if (dayOfBirth === 5) {
+      dayWeek = daysOfWeek[5];
+      akanName = femaleNames[5];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+    } else if (dayOfBirth === 6) {
+      dayWeek = daysOfWeek[6];
+      akanName = femaleNames[6];
+      document.getElementById("reportTwo").innerHTML = ("Hi " + userName + ". You were born on a " + dayWeek + ", and your Akan name is " + akanName);
+    }
+  }	
 	
 }
 

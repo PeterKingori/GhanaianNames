@@ -1,0 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.topHead {
+	background-image: linear-gradient(red, yellow, green);
+}
