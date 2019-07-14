@@ -17,5 +17,36 @@ function checkValid() {
   var monthInt = parseInt(month);
   var yearValue = document.getElementById("userYear").value;
   var yearInteger = parseInt(yearValue);
-	console.log(day, month, yearValue);
+	
+  //Check the validity of the day and month digits
+  if ((dayInt > 0 && dayInt <= 31) && (monthInt > 0 && monthInt <= 12) && (yearInteger >= 1900)) {
+    if (monthInt === 2 && dayInt > 29) {
+      alert('Enter a valid day for the month of February.');
+    } else {
+      document.getElementById("reportBack").innerHTML = 'Great!';
+      calculateDay();
+    }
+  }
+	else if (dayInt <= 0 || dayInt > 31)
+	{
+    alert('Enter a valid day of the month.');
+  }
+	else if (monthInt <= 0 || monthInt > 12)
+	{
+    alert('Enter a valid month of the year.');
+  }
+	else if (yearInteger < 1900)
+	{
+    alert('You are not that old!');
+  }
+	else
+	{
+    document.getElementById('reportBack').innerHTML = 'Enter valid values for the day and month of the year.';
+  }
 }
+	
+
+
+
+
+
