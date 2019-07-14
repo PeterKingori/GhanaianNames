@@ -5,3 +5,7 @@ html {
 .topHead {
 	background-image: linear-gradient(red, yellow, green);
 }
+
+body {
+	font-family: Avenir;
+}
