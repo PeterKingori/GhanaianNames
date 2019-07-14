@@ -45,7 +45,15 @@ function checkValid() {
   }
 }
 	
-
+// This function will calculate the day of the week the person was born on
+function calculateDay() {
+  var date = document.getElementById('userDay').value;
+  var dateInt = parseInt(date);
+  var month = document.getElementById('userMonth').value;
+  var monthInt = parseInt(month);
+  var year = document.getElementById('userYear').value;
+  var yearInt = parseInt(year);
+}
 
 
 
