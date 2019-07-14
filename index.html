@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-	<head>
+
+<head>
 	<!--	Required meta tags	-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit">
@@ -27,25 +28,41 @@
 		</div>
 		<div class="row justify-content-center">
 			<p class="lead col-md-6">Would you like to find out your Akan name?</p>
-			<div class="col-md-6 bg-light">
+			<div class="col-md-6">
 				<button class="btn btn-primary btn-lg" id="yesButton">Yes</button>
 				<button class="btn btn-outline-secondary btn-lg" id="yesButton">No</button>
 			</div>
 		</div>
-
 	</div>
 
+	<div class="container justify-content-center mt-5" id="form">
+		<form id="userForm">
+			<fieldset>
+				<legend>User information</legend>
+				<div class="form-group">
+					<label for="userName"><h5>Enter your name</h5></label>
+					<input type="text" id="userName" placeholder="Name" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label><h5>Enter your date of birth</h5></label>
+					<small class="form-text">Enter day</small>
+					<input type="number" id="userDay" placeholder="Day" class="form-control" required>
+					<small class="form-text">Enter month</small>
+					<input type="number" id="userMonth" placeholder="Month" class="form-control" required>
+					<small class="form-text">Enter year</small>
+					<input type="number" id="userYear" placeholder="Year" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label><h5>Choose your gender</h5></label>
+					<input type="radio" name="gender" value="female" id="userFemale" class="form-control">
+					<p class="form-text">Female</p>
+					<input type="radio" name="gender" value="male" id="userMale" class="form-control">
+					<p class="form-text">Male</p>
+				</div>
+				<input type="button" value="Submit" class="btn btn-primary">
+			</fieldset>
+		</form>
+	</div>
+	<br><br>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
