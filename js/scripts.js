@@ -53,6 +53,25 @@ function calculateDay() {
   var monthInt = parseInt(month);
   var year = document.getElementById('userYear').value;
   var yearInt = parseInt(year);
+	
+  if (monthInt >= 3) {
+    monthInt -= 2;
+  } else {
+    monthInt += 10;
+  }
+  if ((monthInt === 11) || (monthInt === 12)) {
+    yearInt--;
+  }
+  var centuryDigits = Math.floor(yearInt / 100);
+  var yearDigits = yearInt % 100;
+
+  var dayOfBirth = (dateInt + Math.floor((2.6 * monthInt) - 0.2) + yearDigits + Math.floor(yearDigits / 4) + Math.floor(centuryDigits / 4) - (2 * centuryDigits)) % 7;
+
+  if (dayOfBirth < 0) {
+    dayOfBirth += 7;
+  }
+	console.log(dayOfBirth);
+
 }
 
 
