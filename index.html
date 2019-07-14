@@ -17,6 +17,9 @@
 		#noClick {
 			display: none;
 		}
+		#resetButton {
+			display: none;
+		}
 	</style>
 </head>
 
@@ -79,9 +82,13 @@
 				<p id="reportTwo"></p>
 			</div>
 		</div>
-		<h5>You can try again.</h5>
-		<button type="reset" class="btn btn-success" onclick="resetForm(this.id)" id="reset">Reset form</a></button>				
 	</div>
+	
+	<div class="container" id="resetButton">
+		<h5>You can try again.</h5>
+		<button type="reset" class="btn btn-success" onclick="resetForm(this.id)" id="reset">Reset form</a></button>
+	</div>
+	
 	<div class="container mt-4" id="noClick">
 		<p>Thank you for visiting our website. If you're still interested to find out your Akan name press the <button class="btn btn-success" disabled>Yes</button> button above.</p>
 	</div>

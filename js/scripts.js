@@ -4,6 +4,7 @@ function buttonClicked(id) {
 		document.getElementById('form').style.display = 'block';
 		document.getElementById('noClick').style.display = 'none';
 		document.getElementById('result').style.display = 'none';		
+		document.getElementById('resetButton').style.display = 'block';		
 	} else {
 		document.getElementById('form').style.display = 'none';
 		document.getElementById('result').style.display = 'none';
