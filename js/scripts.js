@@ -144,11 +144,11 @@ function calculateDay() {
   }		
 }
 
-function resetForm(id) {
-	if (id === 'reset') {
-		document.getElementById('form').style.display = 'block';		
-	}
-}
+//function resetForm(id) {
+//	if (id === 'reset') {
+//		document.getElementById('form').style.display = 'block';		
+//	}
+//}
 
 
 
