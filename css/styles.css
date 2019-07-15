@@ -8,6 +8,9 @@ html {
 
 body {
 	font-family: Avenir;
+	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .words {
