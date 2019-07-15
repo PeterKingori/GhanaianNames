@@ -13,3 +13,10 @@ body {
 .words {
 	color: blue;
 }
+
+
+@media screen and (max-width: 425px) {
+	.container {
+		padding: 20px;
+	}
+}
