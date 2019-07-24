@@ -3,7 +3,7 @@
 #### July 2019
 #### By **Peter Kingori Ndegwa**
 ## Description
-This web application takes a user's input which include the date of birth and gender and outputs their Akan name determined by Ghana culture. It uses Javascript functions and an algorithm to calculate the day of the week the user was born on. The calculation uses the date of birth split into the day of the month, the month of birth and the year split into the century digits and year digits. The link to the live site is https://peterkingori.github.io/ghanaian-names/
+This web application takes a user's input which include the date of birth and gender and outputs their Akan name determined by Ghana culture. It uses Javascript functions and an algorithm to calculate the day of the week the user was born on. The calculation uses the date of birth split into the day of the month, the month of birth and the year split into the century digits and year digits. The link to the live site is https://peterkingori.github.io/GhanaianNames/
 ## Setup/Installation Requirements
 The user should input the data required and the web app will do the rest. You will then see your results. If you would like to download the code just copy it from this repository. You can also fork it to your own account and clone it from there.
 ## Known Bugs
