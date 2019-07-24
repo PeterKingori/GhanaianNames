@@ -14,12 +14,15 @@
 		#form {
 			display: none;
 		}
+
 		#noClick {
 			display: none;
 		}
+
 		#resetButton {
 			display: none;
 		}
+
 	</style>
 </head>
 
@@ -31,70 +34,85 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="row mb-5">
-			<p>The <span class="words">Akan people</span> of <span class="words">Ghana</span> have a distinct naming system of their children. Newborns are named depending on the day of the week they are born. These names have special meanings as a symbol of their culture, ancestral ties, and even concerning the soul and character of the child. This tradition naming system is also followed in other <span class="words">West African</span> countries with distinct varieties.</p>
-			<p>Most Ghanaians have a name from this system, as well as an English or Christian name. Prominent people named using this system include the former United Nations Secretrary-General, <span class="words">Koffi Atta Annan</span>, who was named for being born on a <span class="words">Friday</span>. Another notable person is <span class="words">Kwame Nkrumah</span>, Ghana's first persident, named for being born on a <span>Saturday</span>.</p>
-			<p>Use our application to find out your Akan name too. Click on the YES button below and a form will appear where you will enter your birth date and gender. Our application will calculate the day of the week you were born on and display your results.</p>
-		</div>
-		<div class="row justify-content-center">
-			<p class="lead col-md-6">Would you like to find out your Akan name?</p>
+		<div class="row">
 			<div class="col-md-6">
-				<button class="btn btn-primary btn-lg" onclick="buttonClicked(this.id)" id="yesButton">Yes</button>
-				<button class="btn btn-outline-secondary btn-lg" onclick="buttonClicked(this.id)" id="noButton">No</button>
+				<div class="row mb-5">
+					<p>The <span class="words">Akan people</span> of <span class="words">Ghana</span> have a distinct naming system of their children. Newborns are named depending on the day of the week they are born. These names have special meanings as a symbol of their culture, ancestral ties, and even concerning the soul and character of the child. This tradition naming system is also followed in other <span class="words">West African</span> countries with distinct varieties.</p>
+					<p>Most Ghanaians have a name from this system, as well as an English or Christian name. Prominent people named using this system include the former United Nations Secretrary-General, <span class="words">Koffi Atta Annan</span>, who was named for being born on a <span class="words">Friday</span>. Another notable person is <span class="words">Kwame Nkrumah</span>, Ghana's first persident, named for being born on a <span>Saturday</span>.</p>
+					<p>Use our application to find out your Akan name too. Click on the YES button below and a form will appear where you will enter your birth date and gender. Our application will calculate the day of the week you were born on and display your results.</p>
+				</div>
+				<div class="row justify-content-center">
+					<p class="lead col-md-6">Would you like to find out your Akan name?</p>
+					<div class="col-md-6">
+						<button class="btn btn-primary btn-lg" onclick="buttonClicked(this.id)" id="yesButton">Yes</button>
+						<button class="btn btn-outline-secondary btn-lg" onclick="buttonClicked(this.id)" id="noButton">No</button>
+					</div>
+				</div>
 			</div>
+			<div class="col-md-6">
+				<div class="justify-content-center mt-5" id="form">
+					<form id="userForm">
+						<fieldset>
+							<legend>User information</legend>
+							<div class="form-group">
+								<label for="userName">
+									<h5>Enter your name</h5>
+								</label>
+								<input type="text" id="userName" placeholder="Name" class="form-control" required>
+							</div>
+							<div class="form-group">
+								<label>
+									<h5>Enter your date of birth</h5>
+								</label>
+								<small class="form-text">Enter date (in digits)</small>
+								<input type="number" id="userDay" placeholder="Day" class="form-control" required>
+								<small class="form-text">Enter month (in digits)</small>
+								<input type="number" id="userMonth" placeholder="Month" class="form-control" required>
+								<small class="form-text">Enter year</small>
+								<input type="number" id="userYear" placeholder="Year" class="form-control" required>
+							</div>
+							<div class="form-group">
+								<label>
+									<h5>Choose your gender</h5>
+								</label>
+								<input type="radio" name="gender" value="female" id="userFemale" class="form-control">
+								<p class="form-text">Female</p>
+								<input type="radio" name="gender" value="male" id="userMale" class="form-control">
+								<p class="form-text">Male</p>
+							</div>
+							<input type="button" value="Submit" class="btn btn-primary" onclick="checkValid()">
+						</fieldset>
+					</form>
+					<p class="mt-3" id="reportBack">Your results will display here below.</p>
+				</div>
+
+				<div class="justify-content-center pt-3" id="result">
+					<div class="card mb-3" style="width: 18rem;">
+						<img class="card-img-bottom" src="images/child1.jpg" alt="Children">
+						<div class="card-body">
+							<p id="reportTwo"></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="resetButton">
+					<h5>You can try again.</h5>
+					<button type="reset" class="btn btn-success"><a href="index.html">Reset form</a></button>
+				</div>
+
+				<div class="container mt-4" id="noClick">
+					<p>Thank you for visiting our website. If you're still interested to find out your Akan name press the <button class="btn btn-success" disabled>Yes</button> button above.</p>
+				</div>
+
+			</div>
+
 		</div>
 	</div>
 
-	<div class="container justify-content-center mt-5" id="form">
-		<form id="userForm">
-			<fieldset>
-				<legend>User information</legend>
-				<div class="form-group">
-					<label for="userName"><h5>Enter your name</h5></label>
-					<input type="text" id="userName" placeholder="Name" class="form-control" required>
-				</div>
-				<div class="form-group">
-					<label><h5>Enter your date of birth</h5></label>
-					<small class="form-text">Enter date (in digits)</small>
-					<input type="number" id="userDay" placeholder="Day" class="form-control" required>
-					<small class="form-text">Enter month (in digits)</small>
-					<input type="number" id="userMonth" placeholder="Month" class="form-control" required>
-					<small class="form-text">Enter year</small>
-					<input type="number" id="userYear" placeholder="Year" class="form-control" required>
-				</div>
-				<div class="form-group">
-					<label><h5>Choose your gender</h5></label>
-					<input type="radio" name="gender" value="female" id="userFemale" class="form-control">
-					<p class="form-text">Female</p>
-					<input type="radio" name="gender" value="male" id="userMale" class="form-control">
-					<p class="form-text">Male</p>
-				</div>
-				<input type="button" value="Submit" class="btn btn-primary" onclick="checkValid()">
-			</fieldset>
-		</form>
-		<p class="mt-3" id="reportBack">Your results will display here below.</p>
-	</div>
-	
-	<div class="container justify-content-center" id="result">
-		<div class="card mb-3" style="width: 18rem;">
-			<img class="card-img-bottom" src="images/child1.jpg" alt="Children">
-			<div class="card-body">
-				<p id="reportTwo"></p>
-			</div>
-		</div>
-	</div>
-	
-	<div class="container" id="resetButton">
-		<h5>You can try again.</h5>
-		<button type="reset" class="btn btn-success"><a href="index.html">Reset form</a></button>
-	</div>
-	
-	<div class="container mt-4" id="noClick">
-		<p>Thank you for visiting our website. If you're still interested to find out your Akan name press the <button class="btn btn-success" disabled>Yes</button> button above.</p>
-	</div>
-	
+
 	<br><br>
 	<script src="js/scripts.js" type="text/javascript"></script>
-	
+
 </body>
+
 </html>
